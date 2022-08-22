@@ -14,7 +14,6 @@ export const ContainerAvatar = styled.div`
 
     border-radius: 9999px;
     overflow: hidden;
-    margin-right: 70px;
 
     img {
         width: 400px;
@@ -22,5 +21,31 @@ export const ContainerAvatar = styled.div`
         position: absolute;
         top: 30px;
         left: 50px;
+    }
+
+    @media (max-width: 1200px) {
+        width: 400px;
+        height: 400px;
+
+        img {
+            width: 300px;
+            height: 430px;
+            position: absolute;
+            top: 30px;
+            left: 50px;
+        }
+    }
+
+    @media (max-width: 1080px) {
+        width: 300px;
+        height: 300px;
+        
+        img {
+            width: 250px;
+            height: 330px;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
     }
 `

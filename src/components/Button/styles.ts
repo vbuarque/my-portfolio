@@ -5,7 +5,6 @@ export const Button = styled.button`
     align-items: center;
     justify-content: space-between;
 
-    max-width: 450px;
     width: 100%;
     padding: 16px;
 
@@ -16,14 +15,13 @@ export const Button = styled.button`
     color: ${props => props.theme.colors.buttonText};
 
     cursor: pointer;
+    
 `;
 
 export const Heading = styled.div`
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-
-    
 `;
 
 export const Text = styled.span``;

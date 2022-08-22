@@ -1,13 +1,14 @@
 import {Button as StyledButton, Heading, Text, Icon} from './styles';
+import { ButtonHTMLAttributes } from 'react';
 
-type Props = {
+type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
     title: string;
     icon: JSX.Element;
 };
 
-export default function Button({ title, icon }: Props) {
+export default function Button({ title, icon, ...rest }: Props) {
     return(
-        <StyledButton>
+        <StyledButton {...rest}>
             <Heading>
                 <Text>
                     {title}

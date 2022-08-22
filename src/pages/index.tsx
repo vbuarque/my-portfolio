@@ -1,14 +1,72 @@
 import { Avatar } from "../components/Avatar";
-import { Container, ContainerLeftSide, ContainerRightSide, ContainerText, Span, SpanName, WelcomeText, SpanSubtitle, ContainerButton, Footer} from "./styles";
+import { Container, LeftContent, RightContent, SpanTitle, SpanSubtitle, MainContent, Footer, Button as ButtonStyled} from "./styles";
 
+import { HandWaving, CaretDown, CaretDoubleRight } from 'phosphor-react';
 import Button from "../components/Button";
 
-import { HandWaving, CaretDoubleRight, CaretDown } from "phosphor-react"; 
 
 export default function MainPage() {
   return (
     <Container>
-      <ContainerLeftSide>
+      <MainContent>
+        <LeftContent>
+            <SpanTitle>
+              Olá, me chamo <b><u>Vinicius Buarque</u></b>
+              <HandWaving />
+            </SpanTitle>
+
+            <SpanSubtitle>
+              Desenvolvedor web/mobile
+            </SpanSubtitle>
+
+            <a href="https://linktr.ee/vbuarque">
+              <Button title="Entre em contato" icon={<CaretDoubleRight width={49} height={49}/>} />
+            </a>
+        </LeftContent>
+          
+        <RightContent>
+            <Avatar />
+        </RightContent>
+
+        <Footer>
+          <ButtonStyled>
+            <CaretDown />
+          </ButtonStyled>
+        </Footer>
+      </MainContent>
+    </Container>
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* <ContainerLeftSide>
         <ContainerText>
             <WelcomeText>
                 <Span>Olá, Me chamo</Span>
@@ -27,12 +85,11 @@ export default function MainPage() {
           </a>
         </ContainerButton>
       </ContainerLeftSide>
+
       <ContainerRightSide>
             <Avatar />
       </ContainerRightSide>
+      
       <Footer>
           <CaretDown width={100} height={80}/>
-      </Footer>
-    </Container>
-  );
-}
+      </Footer> */}

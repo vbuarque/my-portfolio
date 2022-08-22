@@ -5,7 +5,7 @@ export const Container = styled.div`
     padding: 0 30px;
     display: flex;
     align-items: center;
-    justify-content: end; 
+    justify-content: space-between; 
     color: ${props => props.theme.colors.text};
 `;
 
@@ -13,5 +13,17 @@ export const ContainerIcon = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 5px;
+`;
+
+export const HeaderTitle = styled.div`
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 99999px;
+    background: ${props => props.theme.colors.avatar};
+
+    font-size: 15px;
+    color: ${props => props.theme.colors.buttonText};
 `;
