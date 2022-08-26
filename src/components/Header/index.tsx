@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import {Container, ContainerIcon, HeaderTitle} from './styles';
+import {Container, ContainerIcon, IconSpacing, SwitchContainer} from './styles';
 import Switch from 'react-switch';
 import { ThemeContext } from 'styled-components';
 import { shade } from 'polished';	
@@ -15,13 +15,11 @@ export function Header({ toggleTheme }: Props) {
 
     return (
         <Container>
-            <HeaderTitle>
-                <span>VB</span>
-            </HeaderTitle>
-            
             <ContainerIcon>
-                    {title === 'light' ? <Sun width={20} height={20}/> : <Moon width={20} height={20}/>}
-                    
+                <IconSpacing>
+                    {title === 'light' ? <Sun size={25} weight="thin"/> : <Moon size={25} weight="thin"/>}
+                </IconSpacing>
+                <SwitchContainer>
                     <Switch 
                     onChange={toggleTheme}   
                     checked={title === 'dark'}         
@@ -35,6 +33,7 @@ export function Header({ toggleTheme }: Props) {
                     offColor={shade(0.7, colors.secondary)}
                     onColor={colors.secondary}
                 />
+                </SwitchContainer>
             </ContainerIcon>
             
             
