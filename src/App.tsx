@@ -7,7 +7,8 @@ import dark from './styles/themes/dark';
 
 import GlobalStyle from './styles/global';
 import { Header } from './components/Header';
-import MainPage from './pages';
+import WelcomePage from './pages/Home';
+import TechStack from './pages/TechStack';
 
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
       <div className="App">
         <GlobalStyle />
         <Header toggleTheme={toggleTheme}/>
-        <MainPage />
+        <WelcomePage />
+        <TechStack/>
       </div>
     </ThemeProvider>
   );

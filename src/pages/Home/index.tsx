@@ -1,4 +1,4 @@
-import { Avatar } from "../components/Avatar";
+import { Avatar } from "../../components/Avatar";
 import { 
   Container, 
   Main, 
@@ -21,7 +21,7 @@ import {
 
 import { HandWaving, MapPin, LinkedinLogo, GithubLogo, TwitterLogo } from 'phosphor-react';
 
-export default function MainPage() {
+export default function WelcomePage() {
   return (
     <Container>
       <Main>
@@ -44,7 +44,7 @@ export default function MainPage() {
 
           <Subtitle>
             <TextSubtitle>
-              Estudante e Desenvolvedor web/mobile.
+              Estudante e desenvolvedor web/mobile.
             </TextSubtitle>
           </Subtitle>
         </Section>

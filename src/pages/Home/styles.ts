@@ -19,6 +19,10 @@ export const Main = styled.main`
         justify-content: center; 
         flex-direction: column-reverse;
     }
+
+    @media (max-width: 375px) {
+        padding: 0px 25px 0px 25px;
+    }
 `;
 
 export const Section = styled.section`
@@ -139,7 +143,10 @@ export const AvatarSubtitle = styled.div`
 
 export const AvatarTextSubtitle = styled.span`
     margin-left: 8px;
-    font-size: 18px;
+
+    @media (max-width: 355px) {
+        margin-left: 0;
+    }
 `;
 
 export const SectionContact = styled.section`
