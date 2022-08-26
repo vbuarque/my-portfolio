@@ -4,7 +4,7 @@ import {
   Main, 
   Section, 
   SectionAvatar, 
-  Title, 
+  TitleSection, 
   TextPrimary, 
   TextSecondary, 
   TextThird,
@@ -21,14 +21,12 @@ import {
 
 import { HandWaving, MapPin, LinkedinLogo, GithubLogo, TwitterLogo } from 'phosphor-react';
 
-
-
 export default function MainPage() {
   return (
     <Container>
       <Main>
         <Section>
-          <Title>
+          <TitleSection>
             <TextPrimary>
               Olá <HandWaving size={48} weight="thin"/>,
             </TextPrimary>
@@ -42,7 +40,7 @@ export default function MainPage() {
                 Vinicius Buarque
               </TextThird>
             </ContainerText>
-          </Title>
+          </TitleSection>
 
           <Subtitle>
             <TextSubtitle>
@@ -54,7 +52,7 @@ export default function MainPage() {
         <SectionAvatar>
           <Avatar />
           <AvatarSubtitle>
-              <MapPin size={18} weight="thin"/>
+              <MapPin size={25} weight="thin"/>
               <AvatarTextSubtitle>
                 São José dos Campos - SP
               </AvatarTextSubtitle>
@@ -78,59 +76,3 @@ export default function MainPage() {
     </Container>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/* <ContainerLeftSide>
-        <ContainerText>
-            <WelcomeText>
-                <Span>Olá, Me chamo</Span>
-                <SpanName>
-                    Vinicius Buarque
-                    <HandWaving width={42} height={42}/>
-                </SpanName>
-            </WelcomeText>
-            <WelcomeText>
-                <SpanSubtitle>Desenvolvedor web/mobile</SpanSubtitle>
-            </WelcomeText>
-        </ContainerText>
-        <ContainerButton>
-          <a href="https://linktr.ee/vbuarque" target="__blank">
-            <Button title="Entre em contato" icon={<CaretDoubleRight width={49} height={49}/>}/>
-          </a>
-        </ContainerButton>
-      </ContainerLeftSide>
-
-      <ContainerRightSide>
-            <Avatar />
-      </ContainerRightSide>
-      
-      <Footer>
-          <CaretDown width={100} height={80}/>
-      </Footer> */}

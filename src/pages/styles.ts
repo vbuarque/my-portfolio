@@ -24,27 +24,71 @@ export const Main = styled.main`
 export const Section = styled.section`
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 975px) {
+        margin-top: 32px;
+    }
 `;
 
-export const Title = styled.div`
+export const TitleSection = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
+
+    @media (max-width: 975px) {
+        align-items: center;
+        justify-content: center; 
+    }
 `;
 
 export const TextPrimary  = styled.span`
     font-size: 48px; 
     font-weight: 100;
+
+    @media (max-width: 550px) {
+        font-size: 32px;
+        
+        svg {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    @media (max-width: 365px) {
+        font-size: 25px;
+        
+        svg {
+            width: 25px;
+            height: 25px;
+        }
+    }
 `;
 
 export const TextSecondary = styled.span`
     font-size: 48px;
     font-weight: 100;
+
+    @media (max-width: 550px) {
+        font-size: 32px;
+    }
+
+    @media (max-width: 365px) {
+        font-size: 25px;
+    }
 `;
 
 export const TextThird  = styled.span`
     font-size: 48px;
     font-weight: bold;
+    text-decoration: underline;
+
+    @media (max-width: 550px) {
+        font-size: 32px;
+    }
+
+    @media (max-width: 390px) {
+        font-size: 25px;
+    }
 `;
 
 export const ContainerText = styled.div`
@@ -54,11 +98,31 @@ export const ContainerText = styled.div`
 
 export const Subtitle = styled.div`
     margin-top: 32px;
+
+    @media (max-width: 550px) {
+        margin-top: 16px;
+    }
 `;
 
 export const TextSubtitle = styled.span`
     font-size: 32px;
     font-weight: 100;
+
+    @media (max-width: 675px) {
+        font-size: 25px;
+    }
+
+    @media (max-width: 550px) {
+        font-size: 20px;
+    }
+
+    @media (max-width: 495px) {
+        font-size: 16px;
+    }
+
+    @media (max-width: 390px) {
+        font-size:12px;
+    }
 `;
 
 export const SectionAvatar = styled.section`
