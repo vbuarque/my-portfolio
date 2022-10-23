@@ -11,6 +11,7 @@ declare module 'styled-components' {
         button: string,
         buttonText: string,
         avatar: string,
+        scroll: string,
     }
   }
 }

@@ -11,7 +11,7 @@ export const Main = styled.main`
     justify-content: space-between;
 
     width: 100%;
-    height: calc(100vh - 60px);
+    height: 100vh;
 
     padding: 0px 50px 0px 50px;
 
@@ -101,10 +101,10 @@ export const ContainerText = styled.div`
 `;
 
 export const Subtitle = styled.div`
-    margin-top: 32px;
+    margin-top: 16px;
 
     @media (max-width: 550px) {
-        margin-top: 16px;
+        margin-top: 0;
     }
 `;
 

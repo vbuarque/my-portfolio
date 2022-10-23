@@ -19,7 +19,9 @@ import {
   TwitterLink
  } from "./styles";
 
-import { HandWaving, MapPin, LinkedinLogo, GithubLogo, TwitterLogo } from 'phosphor-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHandPeace, faMapPin } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 export default function WelcomePage() {
   return (
@@ -28,7 +30,7 @@ export default function WelcomePage() {
         <Section>
           <TitleSection>
             <TextPrimary>
-              Olá <HandWaving size={48} weight="thin"/>,
+              Olá <FontAwesomeIcon icon={faHandPeace} />,
             </TextPrimary>
 
             <TextSecondary>
@@ -52,7 +54,7 @@ export default function WelcomePage() {
         <SectionAvatar>
           <Avatar />
           <AvatarSubtitle>
-              <MapPin size={25} weight="thin"/>
+            <FontAwesomeIcon icon={faMapPin}/>
               <AvatarTextSubtitle>
                 São José dos Campos - SP
               </AvatarTextSubtitle>
@@ -60,15 +62,15 @@ export default function WelcomePage() {
 
           <SectionContact>
               <LinkedinLink href='https://www.linkedin.com/in/vbgusmao/' target='_blank'>
-                <LinkedinLogo size={48} weight="fill"/>
+                <FontAwesomeIcon icon={faLinkedin} size="2x"/>
               </LinkedinLink>
 
               <GithubLink href='https://github.com/vbuarque' target='_blank'>
-                <GithubLogo size={48} weight="fill"/>
+                <FontAwesomeIcon icon={faGithub} size="2x" />
               </GithubLink>
 
               <TwitterLink href='https://twitter.com/vbuarqu3' target='_blank'>
-                  <TwitterLogo size={48} weight="fill"/>
+                <FontAwesomeIcon icon={faTwitter} size="2x" />
               </TwitterLink>
           </SectionContact>
         </SectionAvatar>

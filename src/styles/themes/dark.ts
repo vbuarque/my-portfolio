@@ -11,5 +11,6 @@ export default {
         button: '#f8f8f8',
         buttonText: '#29292e',
         avatar: '#f8f8f8',
+        scroll: '#f8f8f8',
     }
 }

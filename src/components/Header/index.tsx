@@ -4,7 +4,8 @@ import {Container, ContainerIcon, IconSpacing, SwitchContainer} from './styles';
 import Switch from 'react-switch';
 import { ThemeContext } from 'styled-components';
 import { shade } from 'polished';	
-import { Sun, Moon } from 'phosphor-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
 interface Props {
     toggleTheme(): void;
@@ -17,7 +18,7 @@ export function Header({ toggleTheme }: Props) {
         <Container>
             <ContainerIcon>
                 <IconSpacing>
-                    {title === 'light' ? <Sun size={25} weight="thin"/> : <Moon size={25} weight="thin"/>}
+                    {title === 'light' ? <FontAwesomeIcon icon={faSun}/> : <FontAwesomeIcon icon={faMoon}/>}
                 </IconSpacing>
                 <SwitchContainer>
                     <Switch 
