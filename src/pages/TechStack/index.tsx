@@ -4,7 +4,8 @@ import {
   TitleHeading,
   SubtitleHeading,
   TechStackGrid,
-  TechStackItem
+  GridItem,
+  GridImage
 } from "./styles";
 
 import ReactIcon from "../../assets/svg/react-icon.svg";
@@ -28,36 +29,66 @@ export default function TechStack() {
         </Heading>
 
         <TechStackGrid>
-          <TechStackItem 
-            src={HtmlIcon}
-          />
-           <TechStackItem 
-            src={CssIcon}
-          />
-          <TechStackItem 
-            src={JavascriptIcon}
-          />
-           <TechStackItem 
-            src={BootstrapIcon}
-          />
-          <TechStackItem 
-            src={ReactIcon}
-          />
-           <TechStackItem 
-            src={TypescriptIcon}
-          />
-          <TechStackItem 
-            src={SCIcon}
-          />
-           <TechStackItem 
-            src={SassIcon}
-          />
-          <TechStackItem 
-            src={NodeIcon}
-          />
-           <TechStackItem 
-            src={GitIcon}
-          />
+          <GridItem>
+            <GridImage
+              src={HtmlIcon}
+            />
+          </GridItem>
+
+          <GridItem>
+            <GridImage
+              src={CssIcon}
+            />
+          </GridItem>
+
+          <GridItem>
+            <GridImage
+              src={JavascriptIcon}
+            />
+          </GridItem>
+
+          <GridItem>
+            <GridImage
+              src={BootstrapIcon}
+            />
+          </GridItem>
+
+          <GridItem>
+            <GridImage
+              src={ReactIcon}
+            />
+          </GridItem>
+
+          <GridItem>
+            <GridImage
+              src={TypescriptIcon}
+            />
+          </GridItem>
+
+          <GridItem>
+            <GridImage
+              src={SCIcon}
+            />
+          </GridItem>
+
+          <GridItem>
+            <GridImage
+              src={SassIcon}
+            />
+          </GridItem>
+
+          <GridItem>
+            <GridImage
+              src={NodeIcon}
+            />
+          </GridItem>
+
+          <GridItem>
+            <GridImage
+              src={GitIcon}
+            />
+          </GridItem>
+
         </TechStackGrid>
       </Main>
     </>

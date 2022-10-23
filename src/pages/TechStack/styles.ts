@@ -3,10 +3,6 @@ import styled from 'styled-components';
 export const Main = styled.main`
     height: 100vh;
     width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 `;
 
 export const Heading = styled.div`
@@ -55,9 +51,16 @@ export const SubtitleHeading = styled.span`
 
 export const TechStackGrid = styled.div`
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: auto auto auto auto;
     grid-gap: 16px;
     padding: 16px;
+
+    max-width: 80%;
+    max-height: 80%;
+
+    overflow: auto;
+
+    margin: 0 auto;
 
     transition: all 0.2s ease-in-out;
 
@@ -70,10 +73,17 @@ export const TechStackGrid = styled.div`
     }
 
     @media (max-width: 310px) {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 `;
-export const TechStackItem = styled.img`
+
+export const GridItem = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const GridImage = styled.img`
     width: 7.25rem;
     height: 100%;
     object-fit: cover;
