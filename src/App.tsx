@@ -1,4 +1,3 @@
-
 import usePersistedState from './utils/usePersistedState';
 import { ThemeProvider, DefaultTheme } from 'styled-components';
 
@@ -24,7 +23,7 @@ function App() {
         <GlobalStyle />
         <Header toggleTheme={toggleTheme}/>
         <WelcomePage />
-        <TechStack/>
+        <TechStack toggleTheme={toggleTheme}/>
       </div>
     </ThemeProvider>
   );
