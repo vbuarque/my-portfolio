@@ -3,14 +3,12 @@ import styled from 'styled-components';
 export const TechStackGrid = styled.div`
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-gap: 16px;
+    grid-gap: 24px;
     
     padding: 150px 16px 16px 16px;
 
     max-width: 80%;
     max-height: 80%;
-
-    overflow: auto;
 
     margin: 0 auto;
 
@@ -37,6 +35,8 @@ export const GridItem = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    margin: 0 auto;
 `;
 
 export const GridImage = styled.img`
@@ -46,5 +46,11 @@ export const GridImage = styled.img`
 
     @media (max-width: 560px) {
         width: 5.25rem;
+    }
+
+    :hover {
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
     }
 `
