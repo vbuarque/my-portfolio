@@ -9,6 +9,7 @@ import { Header } from './components/Header';
 
 import WelcomePage from './pages/Home';
 import TechStack from './pages/TechStack';
+import { Projects } from './pages/Projects';
 
 function App() {
   const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', light);
@@ -24,6 +25,7 @@ function App() {
         <Header toggleTheme={toggleTheme}/>
         <WelcomePage />
         <TechStack toggleTheme={toggleTheme}/>
+        <Projects />
       </div>
     </ThemeProvider>
   );
