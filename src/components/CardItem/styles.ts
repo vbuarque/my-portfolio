@@ -56,4 +56,14 @@ export const CardLink = styled.div`
 
 export const Link = styled.a`
     cursor: pointer;
+    text-decoration: none;
+    color: ${props => props.theme.colors.text};
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    transition: all 0.2s ease-in-out;
+
+    :hover {
+        font-size: 1.3rem;
+    }
 `;
